@@ -17,15 +17,15 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  * Define Anax paths.
  *
  */
-define('ANAX_INSTALL_PATH', __DIR__ . '/..');
-define('ANAX_THEME_PATH', ANAX_INSTALL_PATH . '/theme/render.php');
+define('SHIRE_INSTALL_PATH', __DIR__ . '/..');
+define('SHIRE_THEME_PATH', ANAX_INSTALL_PATH . '/theme/render.php');
  
  
 /**
  * Include bootstrapping functions.
  *
  */
-include(ANAX_INSTALL_PATH . '/src/bootstrap.php');
+include(SHIRE_INSTALL_PATH . '/src/bootstrap.php');
  
  
 /**
@@ -40,19 +40,19 @@ session_start();
  * Create the Anax variable.
  *
  */
-$anax = array();
+$shire = array();
  
  
 /**
  * Site wide settings.
  *
  */
-$anax['lang']         = 'sv';
-$anax['title_append'] = ' | Anax en webbtemplate';
+$shire['lang']         = 'sv';
+$shire['title_append'] = ' | Anax en webbtemplate';
 
 /**
  * Theme related settings.
  *
  */
-$anax['stylesheet'] = 'css/style.css';
-$anax['favicon']    = 'favicon.ico';
+$shire['stylesheet'] = 'css/style.css';
+$shire['favicon']    = 'favicon.ico';

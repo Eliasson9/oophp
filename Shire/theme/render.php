@@ -1,6 +1,6 @@
 <?php
 //extract the data array and variables
-extract($anax);
+extract($shire);
 //include functions
 include(__DIR__.'/functions.php');
 //include template file
