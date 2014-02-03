@@ -18,7 +18,7 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  *
  */
 define('SHIRE_INSTALL_PATH', __DIR__ . '/..');
-define('SHIRE_THEME_PATH', ANAX_INSTALL_PATH . '/theme/render.php');
+define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
  
  
 /**

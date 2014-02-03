@@ -4,4 +4,4 @@ extract($shire);
 //include functions
 include(__DIR__.'/functions.php');
 //include template file
-include(__DIR__.'index.tpl.php');
+include(__DIR__.'/index.tpl.php');

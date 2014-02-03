@@ -9,6 +9,7 @@
 </head>
 <body>
   <div id='wrapper'>
+  	<?echo $navMenu?>
     <div id='header'><?=$header?></div>
     <div id='main'><?=$main?></div>
     <div id='footer'><?=$footer?></div>
