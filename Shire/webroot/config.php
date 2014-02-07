@@ -19,7 +19,6 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  */
 define('SHIRE_INSTALL_PATH', __DIR__ . '/..');
 define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
- var_dump(SHIRE_INSTALL_PATH . '/theme/render.php');
  
 /**
  * Include bootstrapping functions.

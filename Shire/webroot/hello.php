@@ -27,4 +27,3 @@ $shire['footer'] = <<<EOD
 EOD;
 
 include(SHIRE_THEME_PATH);
-var_dump($shire);
