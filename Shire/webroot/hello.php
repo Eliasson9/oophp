@@ -12,7 +12,7 @@ $menu = array(
 $shire['navMenu'] = CNavigation::GenerateMenu($menu);
 $shire['title'] = "Hello World!";
 $shire['header'] = <<<EOD
-<img class='sitelogo' src='img/anax.png' alt='Anax logo' />
+<img class='sitelogo' src='img/anax.png' alt='Shire logo' />
 <span class='stetitle'>Shire webbtemplate</span>
 <span class='sitelogan'>Återanvändbara moduler för webbutveckling med PHP </span>
 EOD;
@@ -27,3 +27,4 @@ $shire['footer'] = <<<EOD
 EOD;
 
 include(SHIRE_THEME_PATH);
+var_dump($shire);
