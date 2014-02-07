@@ -1,0 +1,28 @@
+<?php
+
+include(__DIR__.'/config.php');
+include(__DIR__.'/dynamicMenu.php');
+
+
+$menu = array(
+	'home' => array('text' =>'Hem', 'url' =>'?p=home'),
+	'report' => array('text' =>'Redovisning', 'url' =>'?p=report'),
+	'source' => array('text' =>'Källkod', 'url' =>'?p=source'));
+	
+$shire['navMenu'] = CNavigation::GenerateMenu($menu);
+$shire['title'] = "Hello World!";
+$shire['header'] = <<<EOD
+<img class='sitelogo' src='img/anax.png' alt='Shire logo' />
+<span class='stetitle'>Shire webbtemplate</span>
+<span class='sitelogan'>Återanvändbara moduler för webbutveckling med PHP </span>
+EOD;
+
+$shire['main'] = <<<EOD
+<h1>Hej världen!</h1>
+<p>Detta är en exempelsida som visar hur shire ser ut och fungerar.</p>
+EOD;
+
+$shire['footer'] = <<<EOD
+<footer><span class='sitefooter'>Copyright (c) Patrik Eliasson (pael10@student.bth.se) | <a href='https://github.com/Eliasson9/oophp'>Shire på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
+EOD;
+include(SHIRE_THEME_PATH);
