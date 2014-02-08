@@ -30,8 +30,12 @@ class CDice {
 		$this->rolls = array();
 		
 		for($i = 0; $i < $times; $i++){
-			$this->rolls[] = rand(1, 6);
+			$this->rolls[] = $this->getLastRoll();
 		}
+	}
+	
+	public function getLastRoll() {
+		return rand(1, 6);
 	}
 	
 	public function getTotal() {

@@ -14,6 +14,7 @@ class CDiceImage extends CDice {
    	*
    	*/
 	public function __construct() {
+		// The constructur of the baseclass
   		parent::__construct(self::FACES);
   	}
 	
