@@ -7,11 +7,10 @@ $shire['stylesheets'][] = 'css/source.css';
 
 
 // Create the object to display sourcecode
-//$source = new CSource();
 $source = new CSource(array('secure_dir' => '..', 'base_dir' => '..'));
 
 
-// Do it and store it all in variables in the Anax container.
+// Do it and store it all in variables in the Shire container.
 $shire['title'] = "Visa källkod";
 
 $shire['main'] = "<h1>Visa källkod</h1>\n" . $source->View();
