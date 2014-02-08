@@ -17,14 +17,14 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  * Define Shire paths.
  *
  */
-define('SHIRE_INSTALL_PATH', __DIR__ . '/..');
+define('SHIRE_INSTALL_PATH', __DIR__ . '/../Shire');
 define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
 /**
  * Include bootstrapping functions.
  *
  */
 include(SHIRE_INSTALL_PATH . '/src/bootstrap.php');
-include(__DIR__ .'/dynamicMenu.php');
+include(SHIRE_INSTALL_PATH . '/webroot/dynamicMenu.php');
  
  
 /**
