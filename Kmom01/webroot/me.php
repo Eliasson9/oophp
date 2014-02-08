@@ -1,22 +1,8 @@
 <?php
 
 include(__DIR__.'/config.php');
-include(__DIR__.'/dynamicMenu.php');
 
-
-$menu = array(
-	'home' => array('text' =>'Hem', 'url' =>'?p=home'),
-	'report' => array('text' =>'Redovisning', 'url' =>'?p=report'),
-	'source' => array('text' =>'Källkod', 'url' =>'?p=source'));
-	
-$shire['navMenu'] = CNavigation::GenerateMenu($menu);
 $shire['title'] = "Me-Sida";
-$shire['header'] = <<<EOD
-<img class='sitelogo' src='img/blad.jpg' alt='Dbwebb logo' />
-<span class='sitetitle'>Min Me-Sida</span>
-<br />
-<span class='siteslogan'>Detta är min me-sida i oophp</span>
-EOD;
 
 $shire['main'] = <<<EOD
 <h1>Om Mig</h1>
@@ -28,7 +14,4 @@ $shire['main'] = <<<EOD
 <p>Min svagaste sida gällande webbprogrammeringen är utan tvekan css/styling då jag saknar lite känslan för hur det ska se snyggt ut. Tror dock denna kurs kommer att passa mig väldigt bra då funktionallitet är något utav de roligaste men har inte riktigt använt php på ett sådant sätt innan.</p> 
 EOD;
 
-$shire['footer'] = <<<EOD
-<footer><span class='sitefooter'>Copyright (c) Patrik Eliasson (pael10@student.bth.se) | <a href='https://github.com/Eliasson9/oophp'>Shire på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
-EOD;
 include(SHIRE_THEME_PATH);

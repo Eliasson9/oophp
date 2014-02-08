@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width">
 <title><?=get_title($title)?></title>
 <?php if(isset($favicon)): ?><link rel='shortcut icon' href='<?=$favicon?>'/><?php endif; ?>
-<link rel='stylesheet' type='text/css' href='<?=$stylesheet?>'/>
+<?php foreach($stylesheets as $val): ?>
+<link rel='stylesheet' type='text/css' href='<?=$val?>'/>
+<?php endforeach; ?>
 <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
-  	<?=$navMenu?>
+  	<?php echo CNavigation::GenerateMenu($navMenu);?>
     <div id='main'>
     	<div id='content'>
 			<?=$main?>

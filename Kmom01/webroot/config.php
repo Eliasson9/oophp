@@ -24,6 +24,7 @@ define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
  *
  */
 include(SHIRE_INSTALL_PATH . '/src/bootstrap.php');
+include(__DIR__ .'/dynamicMenu.php');
  
  
 /**
@@ -52,5 +53,35 @@ $shire['title_append'] = ' | oophp';
  * Theme related settings.
  *
  */
-$shire['stylesheet'] = 'css/style.css';
+$shire['stylesheets'] = array('css/style.css');
 $shire['favicon']    = 'favicon.ico';
+
+/**
+* The header
+*
+*/
+$shire['header'] = <<<EOD
+<img class='sitelogo' src='img/blad.jpg' alt='Dbwebb logo' />
+<span class='sitetitle'>Me oophp</span>
+<br />
+<span class='siteslogan'>Detta är min me-sida i oophp</span>
+EOD;
+
+/**
+* The nav menu
+*
+*/
+$shire['navMenu'] = array(
+	'home' => array('text' =>'Hem', 'url' =>'me.php'),
+	'report' => array('text' =>'Redovisning', 'url' =>'report.php'),
+	'source' => array('text' =>'Källkod', 'url' =>'source.php'));
+	
+
+/**
+* The footer
+*
+*/
+$shire['footer'] = <<<EOD
+<footer><span class='sitefooter'>Copyright (c) Patrik Eliasson (pael10@student.bth.se) | <a href='https://github.com/Eliasson9/oophp'>Shire på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
+EOD;
+
