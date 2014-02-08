@@ -46,7 +46,7 @@ $shire = array();
  *
  */
 $shire['lang']         = 'sv';
-$shire['title_append'] = ' | Shire en webbtemplate';
+$shire['title_append'] = ' | oophp';
 
 /**
  * Theme related settings.

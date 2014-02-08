@@ -5,7 +5,7 @@
 class CNavigation {
 	//Generate the nav menu
 	public static function GenerateMenu($items) {
-		$html = "<nav>\n";
+		$html = "<nav class='topNav'>\n";
 		foreach ($items as $item) {
 			$html .= "<a href='{$item['url']}'>{$item['text']}</a>\n";
 		}
