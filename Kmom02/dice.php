@@ -19,5 +19,4 @@ $shire['main'] = <<<POD
 <p>Den totala somman är {$dice->getTotal()}</p>
 POD;
 
-
 include(SHIRE_THEME_PATH);

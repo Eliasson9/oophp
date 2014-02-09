@@ -1,0 +1,21 @@
+/* CSS Document */
+#calendar {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 10vw;	
+}
+
+span.calTitle {
+	display: block;
+	text-align: center;	
+}
+
+.week {
+	display: flex;
+}
+
+.day {
+	border: 1px solid #BBBBBB;
+	width: 1.5vw;
+}

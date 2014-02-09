@@ -75,7 +75,8 @@ $shire['navMenu'] = array(
 	'items' => array(
 		'home' => array('text' =>'Hem', 'url' =>'me.php'),
 		'report' => array('text' =>'Redovisning', 'url' =>'report.php'),
-		'source' => array('text' =>'Källkod', 'url' =>'source.php')
+		'source' => array('text' =>'Källkod', 'url' =>'source.php'),
+		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php')
 	),
 	'callback_selected' => function($url) {
     	if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
