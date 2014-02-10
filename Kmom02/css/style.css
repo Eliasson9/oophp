@@ -93,6 +93,22 @@ body {
 	margin:auto;
 }
 
+.myCal {
+	display: flex;
+}
+
+.left {
+	float: left;
+	width: 5vw;
+	margin-left: 5vw;
+}
+
+.right {
+	float: right;
+	width: 5vw;
+	margin-right: 5vw;
+}
+
  
 /**
  * Layout for footer

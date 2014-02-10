@@ -13,6 +13,10 @@ class CMonthBabe{
 		$this->calendar = new CMonth();	
 	}
 	
+	public function __destruct() {
+		$_SESSION['calendar'] = $this->calendar->getDate();
+	}
+	
 	public function getCalendar() {
 		return $this->generateCalendar();	
 	}
@@ -53,7 +57,22 @@ class CMonthBabe{
 		return $html;
 	}
 	
-	public function getMonth(){
-		return $this->calendar->getMonth();	
+	public function getMonthYear(){
+		$date = $this->calendar->getDate();
+		return $date['month'].' '.$date['year'];	
 	}
+	
+	public function week() {
+		$html = "<div class='week'>";
+		$html .= "<div class='weekDay'>SUN</div>";
+		$html .= "<div class='weekDay'>MON</div>";
+		$html .= "<div class='weekDay'>TUE</div>";
+		$html .= "<div class='weekDay'>WED</div>";
+		$html .= "<div class='weekDay'>THU</div>";
+		$html .= "<div class='weekDay'>FRI</div>";
+		$html .= "<div class='weekDay'>SAT</div>";
+		$html .= "</div>";
+		return $html;
+	}
+	
 }

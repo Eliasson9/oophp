@@ -15,3 +15,4 @@ $shire['main'] = <<<EOD
 EOD;
 
 include(SHIRE_THEME_PATH);
+session_destroy();
