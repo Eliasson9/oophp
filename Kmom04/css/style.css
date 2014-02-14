@@ -1,0 +1,124 @@
+/* CSS Document */
+
+/**
+ * General elements
+ */
+body {
+  	color: #333;
+  	font-family: arial, sans-serif;
+}
+ 
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+	margin: 0 auto;
+	width: 100vw;
+	padding: 10px;
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+#header {
+	position: relative;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.sitelogo {
+	left: -10vw;
+	position: relative;
+}
+ 
+.sitetitle {
+	position: absolute;
+	top: 38px;
+	left: 45vw;
+	font-size: 38px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+ 
+.siteslogan {
+	position: absolute;
+	top: 87px;
+	font-style: italic;
+	color: #BBBBBB;
+	text-align: center;
+	left: 45vw;
+}
+
+/**
+ * Layout for nav top
+ */ 
+ .topNav {
+	 text-align: center;
+ }
+ 
+ .topNav a {
+	text-decoration: none;
+	color: #BBBBBB;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #BBBBBB;
+ }
+ 
+ .topNav a.selected {
+	color: #83A31E; 
+ }
+ 
+ .topNav a:hover {
+	text-decoration: underline;
+	color: #000000;
+ }
+ 
+/**
+ * Layout for main
+ */
+#main {
+	min-height: 20em;
+}
+
+/**
+*	Layout for content
+*/
+
+#content {
+	width: 60vw;
+	text-align:left;
+	margin:auto;
+}
+
+.myCal {
+	display: flex;
+}
+
+.left {
+	float: left;
+	width: 5vw;
+	margin-left: 5vw;
+}
+
+.right {
+	float: right;
+	width: 5vw;
+	margin-right: 5vw;
+}
+
+ 
+/**
+ * Layout for footer
+ */
+#footer {
+  	margin-top: 40px;
+  	border-top: 1px solid #ccc;
+  	padding-top: 15px;
+}
+ 
+.sitefooter {
+  	color: #BBBBBB;
+}

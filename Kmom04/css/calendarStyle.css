@@ -1,0 +1,31 @@
+/* CSS Document */
+#calendar {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 30vw;	
+}
+
+span.calendarTitle {
+	display: block;
+	text-align: center;	
+}
+
+.week {
+	display: flex;
+}
+
+.day {
+	border: 1px solid #BBBBBB;
+	width: 4vw;
+	height: 3vh;
+	font-size: 1vw;
+}
+
+.weekDay {
+	border: 1px solid #BBBBBB;
+	width: 4vw;
+	text-align: center;
+	font-size: 1vw;
+	font-family: serif;
+}
