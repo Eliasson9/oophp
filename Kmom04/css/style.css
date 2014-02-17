@@ -93,6 +93,14 @@ body {
 	margin:auto;
 }
 
+#above {
+	text-align: right;
+}
+
+#below {
+	text-align: center;
+}
+
 .myCal {
 	display: flex;
 }
