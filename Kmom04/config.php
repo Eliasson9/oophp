@@ -24,7 +24,6 @@ define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
  *
  */
 include(SHIRE_INSTALL_PATH . '/src/bootstrap.php');
-include(SHIRE_INSTALL_PATH . '/webroot/dynamicMenu.php');
  
  
 /**
@@ -40,6 +39,15 @@ session_start();
  *
  */
 $shire = array();
+ 
+/**
+ * Settings for the database.
+ *
+ */
+$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Movies;';
+$shire['database']['username'] = 'root';
+$shire['database']['password'] = '';
+$shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
  
  
 /**
@@ -76,7 +84,8 @@ $shire['navMenu'] = array(
 		'home' => array('text' =>'Hem', 'url' =>'me.php'),
 		'report' => array('text' =>'Redovisning', 'url' =>'report.php'),
 		'source' => array('text' =>'Källkod', 'url' =>'source.php'),
-		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php')
+		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php'),
+		'movies' => array('text' => 'Filmer', 'url' => 'movies.php')
 	),
 	'callback_selected' => function($url) {
     	if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {

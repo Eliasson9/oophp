@@ -24,7 +24,6 @@ define('SHIRE_THEME_PATH', SHIRE_INSTALL_PATH . '/theme/render.php');
  *
  */
 include(SHIRE_INSTALL_PATH . '/src/bootstrap.php');
-include(SHIRE_INSTALL_PATH . '/webroot/dynamicMenu.php');
  
  
 /**

@@ -12,8 +12,11 @@ function orderBy($column) {
 	return "<span class='orderBy'><a href='?orderBy={$column}&order=asc'>&darr;</i></a><a href='?orderby={$column}&order=desc'>&uarr;</a></span>";
 }
 
-$dbConn = new CDatabase();
-dump($dbConn->getRes());
+$db = new CDatabase($shire['database']);
+$sql = "SELECT COUNT(id) FROM VMovie";
+$res = $db->ExecuteSelectQueryAndFetchAll($sql);
+echo $db->Dump();
+
 $shire['stylesheets'][] = 'css/form.css';
 
 $shire['title'] = "Me-Sida";

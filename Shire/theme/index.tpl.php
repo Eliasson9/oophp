@@ -13,7 +13,7 @@
 <body>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
-  	<?php echo CNavigation::GenerateMenu($navMenu);?>
+  	<?php echo CNavMenu::GenerateMenu($navMenu);?>
     <div id='main'>
     	<div id='content'>
 			<?=$main?>

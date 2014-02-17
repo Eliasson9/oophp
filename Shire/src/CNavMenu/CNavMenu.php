@@ -2,7 +2,7 @@
 
 
 //Class to handle nav menu
-class CNavigation {
+class CNavMenu {
 	//Generate the nav menu
 	public static function GenerateMenu($menu) {
 		$html = "<nav class='topNav'>\n";
