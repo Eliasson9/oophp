@@ -84,7 +84,7 @@ class CDatabase {
 	* @return string with links to order by column.
 	*/
 	function orderBy($column) {
-		return "<span class='orderBy'><a href='?orderBy={$column}&order=asc'>&darr;</i></a><a href='?orderby={$column}&order=desc'>&uarr;</a></span>";
+		return "<span class='orderBy'><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'asc'))."'>&darr;</li></a><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'desc'))."'>&uarr;</a></span>";
 	}
 	
 	/**
@@ -126,7 +126,7 @@ class CDatabase {
  	* @param integer $hits per page.
  	* @param integer $page current page.
  	* @param integer $max number of pages. 
- 	* @param integer $min is the first page number, usually 0 or 1. 
+ 	* @param integer $min is the first page number.
  	* @return string as a link to this page.
  	*/
 	function getPageNav($hits, $page, $max, $min=1) {
