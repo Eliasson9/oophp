@@ -1,8 +1,10 @@
-label       { font-weight: bold; float: left; text-align: right; margin-right: 15px; width: 10vw; padding: 10px;}
+label       { font-weight: bold; float: left; margin-right: 15px; width: 50vw; padding: 10px;}
 fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
 legend      { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bottom:1em; }
 
-fieldset, #IE8#HACK { padding-top:1.4em; } 
+fieldset, #IE8#HACK {
+	padding-top: 1.4em;
+} 
 legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
 
 /* Form fields
@@ -46,7 +48,7 @@ textarea      { width: 390px; height: 250px; padding:5px; }
  */
 form.inline { line-height:3; }
 form.inline p { margin-bottom:0; }
-
+form p {width: 50vw;}
 
 /* Success, info, notice and error/alert boxes
 -------------------------------------------------------------- */
