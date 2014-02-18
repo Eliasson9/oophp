@@ -13,7 +13,7 @@
 <body>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
-  	<?php echo CNavMenu::GenerateMenu($navMenu);?>
+  	<?php $nav = new CNavMenu(); echo $nav->getDynamicNavMenu($navMenu); ?>
     <div id='main'>
     	<div id='content'>
 			<?=$main?>
