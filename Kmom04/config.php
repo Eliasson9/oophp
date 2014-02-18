@@ -87,20 +87,32 @@ EOD;
 *
 */
 $shire['navMenu'] = array(
-	'items' => array(
-		'home' => array('text' =>'Hem', 'url' =>'me.php'),
-		'report' => array('text' =>'Redovisning', 'url' =>'report.php'),
-		'source' => array('text' =>'Källkod', 'url' =>'source.php'),
-		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php'),
-		'movies' => array('text' => 'Filmer', 'url' => 'movies.php')
+	// Use for styling the menu
+  	'class' => 'topNav',
+ 
+  	// Here comes the menu strcture
+  	'items' => array(
+    	// This is a menu item
+    	'home'  => array('text'  =>'Hem', 'url'   =>'index.php', 'title' => 'Some title 1'),
+		'report' => array('text' =>'Redovisning', 'url' =>'report.php', 'title' => 'Some title 1'),
+		'source' => array('text' =>'Källkod', 'url' =>'source.php', 'title' => 'Some title 1'),
+		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php', 'title' => 'Some title 1'),
+		'movies' => array('text' => 'Filmer', 'url' => 'movies.php', 'title' => 'Some title 1',
+			'submenu' => array( 
+				'items' => array(
+					'login' => array('text'  =>'Login', 'url' =>'login.php', 'title' => 'Some title 1'),
+					'logout' => array('text'  =>'Logout', 'url' =>'logout.php', 'title' => 'Some title 1')	
+				),
+			),
+		),
 	),
-	'callback_selected' => function($url) {
+  	// This is the callback tracing the current selected menu item base on scriptname
+  	'callback' => function($url) {
     	if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
       		return true;
     	}
-	}
+  	}
 );
-	
 
 /**
 * The footer

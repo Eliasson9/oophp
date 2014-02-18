@@ -59,6 +59,25 @@ body {
 	 text-align: center;
  }
  
+ .topNav ul {
+	list-style: none;
+	display: inline-flex; 
+ }
+ 
+ .topNav ul ul {
+	list-style: none;
+	display: none; 
+ }
+ 
+ .topNav li:hover ul {
+	display: flex; 
+	flex-direction: column;
+ }
+ 
+ .topNav li {
+	list-style: none;
+ }
+ 
  .topNav a {
 	text-decoration: none;
 	color: #BBBBBB;
