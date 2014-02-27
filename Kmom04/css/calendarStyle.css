@@ -29,3 +29,9 @@ span.calendarTitle {
 	font-size: 1vw;
 	font-family: serif;
 }
+
+img.calImg {
+	display: block;
+	width: 30vw;
+	margin: auto;
+}

@@ -56,10 +56,11 @@ body {
  * Layout for nav top
  */ 
  .topNav {
-	 text-align: center;
+	text-align: center;
  }
  
  .topNav ul {
+ 	width: 60vw;
 	list-style: none;
 	display: inline-flex; 
  }
@@ -76,14 +77,20 @@ body {
  
  .topNav li {
 	list-style: none;
+	height: 3vh;
+	width: 7vw;
+	border-right: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+ }
+ 
+ .topNav li ul li a {
+ 	background-color: #FFFFFF;
+ 	border-right: none;
  }
  
  .topNav a {
 	text-decoration: none;
 	color: #BBBBBB;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-right: 1px solid #BBBBBB;
  }
  
  .topNav a.selected {

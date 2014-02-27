@@ -2,10 +2,10 @@
 
 include(__DIR__.'/config.php');
 
-// Do it and store it all in variables in the Anax container.
+// Do it and store it all in variables in the Shrie container.
 $shire['title'] = "404";
 $shire['header'] = "";
-$shire['main'] = "This is a Anax 404. Document is not here.";
+$shire['main'] = "This is a Shrie 404. Document is not here.";
 $shire['footer'] = "";
  
 // Send the 404 header 

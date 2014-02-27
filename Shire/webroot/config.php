@@ -1,6 +1,6 @@
 <?php
 /**
- * Config-file for Anax. Change settings here to affect installation.
+ * Config-file for Shire. Change settings here to affect installation.
  *
  */
  
@@ -14,7 +14,7 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  
  
 /**
- * Define Anax paths.
+ * Define Shire paths.
  *
  */
 define('SHIRE_INSTALL_PATH', __DIR__ . '/..');
@@ -35,7 +35,7 @@ session_start();
  
  
 /**
- * Create the Anax variable.
+ * Create the Shire variable.
  *
  */
 $shire = array();

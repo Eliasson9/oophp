@@ -9,6 +9,8 @@
 span.calendarTitle {
 	display: block;
 	text-align: center;	
+	font-size: x-large;
+	font-family: serif;
 }
 
 .week {
@@ -28,4 +30,11 @@ span.calendarTitle {
 	text-align: center;
 	font-size: 1vw;
 	font-family: serif;
+}
+
+
+img.calImg {
+	display: block;
+	width: 30vw;
+	margin: auto;
 }

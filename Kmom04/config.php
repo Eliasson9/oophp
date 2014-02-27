@@ -44,17 +44,17 @@ $shire = array();
  * Settings for the database.
  *
  */
-//$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Movies;';
-//$shire['database']['username'] = 'root';
-//$shire['database']['password'] = '';
-//$shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
+$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Movies;';
+$shire['database']['username'] = 'root';
+$shire['database']['password'] = '';
+$shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
 
-
+/*
 $shire['database']['dsn'] = 'mysql:host=blu-ray.student.bth.se;dbname=pael10;';
 $shire['database']['username'] = 'pael10';
 $shire['database']['password'] = 'G+&0\fO4';
 $shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
- 
+*/
 
  
 /**
@@ -93,18 +93,22 @@ $shire['navMenu'] = array(
   	// Here comes the menu strcture
   	'items' => array(
     	// This is a menu item
-    	'home'  => array('text'  =>'Hem', 'url'   =>'index.php', 'title' => 'Some title 1'),
-		'report' => array('text' =>'Redovisning', 'url' =>'report.php', 'title' => 'Some title 1'),
-		'source' => array('text' =>'Källkod', 'url' =>'source.php', 'title' => 'Some title 1'),
-		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php', 'title' => 'Some title 1'),
-		'movies' => array('text' => 'Filmer', 'url' => 'movies.php', 'title' => 'Some title 1',
+    	'home'  => array('text'  =>'Hem', 'url'   =>'index.php', 'title' => 'Hem'),
+		'report' => array('text' =>'Redovisning', 'url' =>'report.php', 'title' => 'SRedovisning'),
+		'source' => array('text' =>'Källkod', 'url' =>'source.php', 'title' => 'Källkod'),
+		'monthBabe' => array('text' => 'Månadens Babe', 'url' => 'month_babe.php', 'title' => 'Månadens Babe'),
+		'movies' => array('text' => 'Filmer', 'url' => 'movies.php', 'title' => 'Filmer',
 			'submenu' => array( 
 				'items' => array(
-					'login' => array('text'  =>'Login', 'url' =>'login.php', 'title' => 'Some title 1'),
-					'logout' => array('text'  =>'Logout', 'url' =>'logout.php', 'title' => 'Some title 1')	
+					'search' => array('text'  =>'Sök', 'url' =>'movies.php', 'title' => 'Sök'),
+					'create' => array('text'  =>'Skapa Ny', 'url' =>'create.php', 'title' => 'Skapa Ny'),
+					'update' => array('text'  =>'Updatera', 'url' =>'update.php', 'title' => 'Updatera'),
+					'remove' => array('text'  =>'Ta Bort', 'url' =>'remove.php', 'title' => 'Ta Bort')	
 				),
-			),
+			),		
 		),
+		'login' => array('text'  =>'Login', 'url' =>'login.php', 'title' => 'Login'),
+		'logout' => array('text'  =>'Logout', 'url' =>'logout.php', 'title' => 'Logout')
 	),
   	// This is the callback tracing the current selected menu item base on scriptname
   	'callback' => function($url) {
