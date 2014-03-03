@@ -55,52 +55,72 @@ body {
 /**
  * Layout for nav top
  */ 
- .topNav {
+.topNav {
 	text-align: center;
- }
+}
  
- .topNav ul {
+.topNav ul {
  	width: 60vw;
 	list-style: none;
-	display: inline-flex; 
- }
+	position: relative;
+	display: inline-table;
+}
+
+.topNav ul li {
+	float: left;	
+}
+
+.topNav ul li a {
+	display: block;	
+	text-decoration: none;
+	color: #BBBBBB;
+}
  
- .topNav ul ul {
+.topNav ul ul {
+	 display: none;
 	list-style: none;
-	display: none; 
- }
+	position: absolute;
+}
  
- .topNav li:hover ul {
-	display: flex; 
-	flex-direction: column;
- }
+.topNav ul li:hover > ul {
+	display: block;
+}
  
- .topNav li {
+.topNav ul ul li {
+	float: none;
+	position: relative;
+}
+
+
+.topNav ul:after {
+	content: ""; clear: both; display: block;
+} 
+
+.topNav li {
 	list-style: none;
 	height: 3vh;
 	width: 7vw;
 	border-right: 1px solid #BBBBBB;
 	background-color: #FFFFFF;
- }
+}
  
- .topNav li ul li a {
+.topNav li ul li {
  	background-color: #FFFFFF;
- 	border-right: none;
- }
+}
  
- .topNav a {
+.topNav a {
 	text-decoration: none;
 	color: #BBBBBB;
- }
+}
  
- .topNav a.selected {
+.topNav a.selected {
 	color: #83A31E; 
- }
+}
  
- .topNav a:hover {
+.topNav a:hover {
 	text-decoration: underline;
 	color: #000000;
- }
+}
  
 /**
  * Layout for main
