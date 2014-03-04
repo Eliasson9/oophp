@@ -15,7 +15,7 @@ if(isset($res[0])) {
 
 $shire['stylesheets'][] = 'css/form.css';
 
-$shire['title'] = "Mina Redovisningar";
+$shire['title'] = "Login";
 	
 $shire['main'] = <<<EOD
 <form method='POST'>

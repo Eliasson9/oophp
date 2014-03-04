@@ -101,9 +101,9 @@ $shire['navMenu'] = array(
 			'submenu' => array( 
 				'items' => array(
 					'search' => array('text'  =>'Sök', 'url' =>'movies.php', 'title' => 'Sök'),
-					'create' => array('text'  =>'Skapa Ny', 'url' =>'create.php', 'title' => 'Skapa Ny'),
-					'update' => array('text'  =>'Updatera', 'url' =>'update.php', 'title' => 'Updatera'),
-					'remove' => array('text'  =>'Ta Bort', 'url' =>'remove.php', 'title' => 'Ta Bort')	
+					'create' => array('text'  =>'Skapa Ny', 'url' =>'createMovie.php', 'title' => 'Skapa Ny'),
+					'update' => array('text'  =>'Updatera', 'url' =>'updateMovie.php', 'title' => 'Updatera'),
+					'remove' => array('text'  =>'Ta Bort', 'url' =>'deleteMovie.php', 'title' => 'Ta Bort')	
 				),
 			),		
 		),

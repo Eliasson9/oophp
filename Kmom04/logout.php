@@ -11,7 +11,7 @@ if(isset($_POST['logout'])) {
 
 $shire['stylesheets'][] = 'css/form.css';
 
-$shire['title'] = "Mina Redovisningar";
+$shire['title'] = "Logout";
 
 $shire['main'] = <<<EOD
 <form method='POST'>
