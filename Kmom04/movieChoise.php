@@ -18,7 +18,7 @@ if(isset($_GET['p'])) {
 $db = new CDatabase($shire['database']);
 $sql = "SELECT * FROM VMovie ";
 $res = $db->ExecuteSelectQueryAndFetchAll($sql);
-$tr = "<table>\n<tr><th>Rad</th><th>Id " . $db->orderBy('id') . "</th><th>Bild</th><th>Titel " . $db->orderBy('title') . "</th><th>År " . $db->orderBy('year') . "</th><th>Genre</th></tr>\n";
+$tr = "<table>\n<tr><th>Rad</th><th>Id</th><th>Bild</th><th>Titel</th><th>År</th><th>Genre</th></tr>\n";
 foreach ($res as $key => $movie) {
 	$tr .= "<tr>\n";
 	$tr .= "<td>{$key}</td><td>{$movie->id}</td><td><img class='movieImg' src='{$movie->image}' alt='movieImage'></td><td>{$movie->title}</td><td>{$movie->year}</td><td>$movie->genre</td><td><input type='radio' name='choise' value='{$movie->id}'/></td>\n";
@@ -34,7 +34,7 @@ $shire['title'] = "Skapa Film";
 $shire['main'] = <<<EOD
 <form>
 	{$tr}
-	</br>
+	<br>
 	<input type='submit' name='selected' value='{$sort}' style='float: right'/>
 </form>
 EOD;

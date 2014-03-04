@@ -23,12 +23,10 @@ $shire['main'] = <<<EOD
 		<legend>Login</legend>
 		<p>
 			<label>Användarnamn</label>
-			</br>
 			<input type='text' name='username'/>
 		</p>
 		<p>
 			<label>Lösenord</label>
-			</br>
 			<input type='password' name='password'/>
 		</p>
 		<p>
@@ -37,7 +35,7 @@ $shire['main'] = <<<EOD
 		<p>
 			<a href='logout.php'>Logout</a>
 		</p>
-	</filedset>
+	</fieldset>
 </form>
 {$db->getAcronym()}
 EOD;

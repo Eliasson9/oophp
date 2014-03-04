@@ -96,11 +96,11 @@ $shire['main'] = <<<EOD
 	<fieldset>
 		<legend>Sök</legend>
 		<p>
-			<label for='title'>Titel (delsträng):</label> 
+			<label>Titel (delsträng):</label> 
 			<input type='search' name='title' value='{$title}'/>
 		</p>
 		<p>
-			<label for='year1'>Skapad mellan åren: </label> 
+			<label >Skapad mellan åren: </label> 
     		<input type='text' name='year1' value='{$year1}'/> - <input type='text' name='year2' value='{$year2}'/>
 		</p>
 		<p>

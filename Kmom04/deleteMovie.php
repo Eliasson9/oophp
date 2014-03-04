@@ -33,7 +33,7 @@ $shire['main'] = <<<EOD
 		<p>
 			<input type='submit' value='Ta Bort' name='remove'/>
 		</p>
-	</filedset>
+	</fieldset>
 </form>
 EOD;
 	

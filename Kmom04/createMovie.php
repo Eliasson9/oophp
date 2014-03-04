@@ -26,7 +26,7 @@ $shire['main'] = <<<EOD
 		<p>
 			<input type='submit' value='Skapa' name='create'/>
 		</p>
-	</filedset>
+	</fieldset>
 </form>
 EOD;
 	

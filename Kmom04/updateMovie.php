@@ -72,7 +72,7 @@ $shire['main'] = <<<EOD
 		<p>
 			<input type='submit' value='Spara' name='edit'/>
 		</p>
-	</filedset>
+	</fieldset>
 </form>
 EOD;
 	
