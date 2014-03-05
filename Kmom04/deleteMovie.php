@@ -3,7 +3,7 @@
 include(__DIR__.'/config.php');
 
 $params = array();
-$db = new CDatabase($shire['database']);
+$db = new CMovieDatabase($shire['database']);
 $sql = "";
 $id = isset($_POST['id']) ?  strip_tags($_POST['id']) : (isset($_GET['id']) ? strip_tags($_GET['id']) : null);
 

@@ -3,7 +3,7 @@
 include(__DIR__.'/config.php');
  
 //Get t parameters
-$db = new CDatabase($shire['database']);
+$db = new CMovieDatabase($shire['database']);
 $title = isset($_GET['title']) ? $_GET['title'] : null;
 $genre = isset($_GET['genre']) ? $_GET['genre'] : null;
 $hits = isset($_GET['hits']) ? $_GET['hits'] : 8;
@@ -79,7 +79,6 @@ foreach ($res as $key => $movie) {
 	$tr .= "<tr>\n";
 	$tr .= "<td>{$key}</td><td>{$movie->id}</td><td><img class='movieImg' src='{$movie->image}' alt='movieImage'></td><td>{$movie->title}</td><td>{$movie->year}</td><td>$movie->genre</td>\n";
 	$tr .= "</tr>\n";
-	var_dump($movie->image);
 }
 $tr .= "</table>\n";
 

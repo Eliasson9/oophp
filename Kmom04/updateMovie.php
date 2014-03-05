@@ -3,7 +3,7 @@
 include(__DIR__.'/config.php');
 
 $params = array();
-$db = new CDatabase($shire['database']);
+$db = new CMovieDatabase($shire['database']);
 $sql = "";
 
 

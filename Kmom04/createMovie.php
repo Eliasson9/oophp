@@ -6,7 +6,7 @@ $title = array();
 
 if(isset($_POST['create'])) {
 	$title[] = $_POST['title'];
-	$db = new CDatabase($shire['database']);
+	$db = new CMovieDatabase($shire['database']);
 	$sql = "INSERT INTO Movie (title) VALUES (?)";
 	$db->ExecuteSelectQueryAndFetchAll($sql, $title);	
 }
