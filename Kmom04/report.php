@@ -24,7 +24,10 @@ Till en början så hoppade jag två år tillbaka istället för ett och tog ett
 <p>Blev en ganska kort redovisning denna gång men har ju sin förklaring till varför.</p>
 
 <h2>Kmom04</h2>
-<p></p>
+<p>Kan nog säga att denna uppgiften är nog den som gett mig mest arbete hittills men var ganska rolig samtidigt. Guiden var väldigt användbar och lärorik då jag endast suttit väldigt lite med PDO innan. Tyckte det var lika bra att ge mig på den dynamiska navigerings menyn med och för att kunna få någon någorlunda användning för den så lade ja till några extra sidor till Movies. Är lite fundersam över hur man ska sköta katalogstrukturen då det gäller en multisida som jag gjort. I den förra kursen så skapade vi en mapp med alla sidor i sig men just nu så ligger alla sidor i samma mapp vilket kan göra det väldigt rörigt och ostruktrerat om man har många sidor. Har inte själv kommit på någon smidig lösning än dock. Måste dock erkänna att jag lade ner aldeles för mycket tid på att få min nya navigeringsmenu att se någorlunda okej ut.</p>
+<p>När det gäller klasserna med kopplingen till databasen och sidorna så valde jag att göra en basklass <code>CDatabase()</code> som skapar grunden till vad som behövs för att koppla till databasen. Sedan har jag mina klasser som har sina specifika funktioner till sidorna.</p>
+<p>Valde att ändra databaskoden en del för att försöka undvika så mycket null-värden som möjligt samt uppfylla normaliserings formerna så bra som möjligt. Detta bidrog till lite extra arbete och öven en del ändring för att fixa min view VMovie men är alltid kul med en utmaning som sagt. Den rörigaste biten blev nog faktiskt updateringsbiten men efter lite trixande så löste även den sig.</p>
+<p>Till sist så när jag trodde att allt var klart och skulle validera koden så fick ja x antal errors... Inte så skoj men det rörde sig mest om min <code>orderby()</code> funktion som fick problem med tecknet & och efter en del googlande så löste jag det med. Så nu återstod endast min img-path som gav error när src var null så fick lägga in en path som default och valde då att ha 'img/movie/' med tanke på att det är mappen som bilderna ligger i.</p>
 </article>
 EOD;
 
