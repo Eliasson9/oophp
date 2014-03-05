@@ -16,6 +16,17 @@ if(isset($_GET['id'])) {
 }
 
 if(isset($_POST['edit'])) {
+	$title = isset($_POST['title']) ? $_POST['title'] : null;
+	$director = isset($_POST['director']) ? $_POST['director'] : null;
+	$length = isset($_POST['length']) ? $_POST['length'] : null;
+	$year = isset($_POST['year']) ? $_POST['year'] : null;
+	$img = isset($_POST['img']) ? $_POST['img'] : null;
+	$plot = isset($_POST['plot']) ? $_POST['plot'] : null;
+	$subtext = isset($_POST['subtext']) ? $_POST['subtext'] : null;
+	$speech = isset($_POST['speech']) ? $_POST['speech'] : null;
+	$quality = isset($_POST['quality']) ? $_POST['quality'] : null;
+	$format = isset($_POST['format']) ? $_POST['format'] : null;
+	
 	$params[] = $_POST['title'];	
 	$sql = "INSERT INTO Movie (title) VALUES (?)";
 	$db->ExecuteSelectQueryAndFetchAll($sql, $title);	
