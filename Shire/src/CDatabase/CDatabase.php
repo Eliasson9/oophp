@@ -142,4 +142,46 @@ class CDatabase {
   		return $nav;
 	}
 	
+	/**
+	 * Get id from Language
+	 * 
+	 * @param string $lang
+	 * @return int as id in database
+	 */
+	 function getLanguage($lang) {
+	 	$params = array($lang);
+	 	$query = "SELECt id FROM Language WHERE lang = ?";
+	 	$this->stmt = $this->db->prepare($query);
+    	$this->stmt->execute($params);
+    	$res = $this->stmt->fetchAll();
+		return $res[0]->id;
+	 }
+	/**
+	 * Get id from Quality
+	 * 
+	 * @param string $quality
+	 * @return int as id in database
+	 */
+	function getQuality($quality) {
+		$params = array($quality);
+	 	$query = "SELECt id FROM Quality WHERE quality = ?";
+	 	$this->stmt = $this->db->prepare($query);
+    	$this->stmt->execute($params);
+    	$res = $this->stmt->fetchAll();
+		return $res[0]->id;
+	}
+	/**
+	 * Get id from Format
+	 * 
+	 * @param string $format
+	 * @return int as id in database
+	 */
+	function getFormat($format) {
+	 	$params = array($format);
+	 	$query = "SELECt id FROM Format WHERE format = ?";
+	 	$this->stmt = $this->db->prepare($query);
+    	$this->stmt->execute($params);
+    	$res = $this->stmt->fetchAll();
+		return $res[0]->id;
+	}
 }

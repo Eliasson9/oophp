@@ -79,6 +79,7 @@ foreach ($res as $key => $movie) {
 	$tr .= "<tr>\n";
 	$tr .= "<td>{$key}</td><td>{$movie->id}</td><td><img class='movieImg' src='{$movie->image}' alt='movieImage'></td><td>{$movie->title}</td><td>{$movie->year}</td><td>$movie->genre</td>\n";
 	$tr .= "</tr>\n";
+	var_dump($movie->image);
 }
 $tr .= "</table>\n";
 
