@@ -44,16 +44,17 @@ $shire = array();
  * Settings for the database.
  *
  */
-//$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Movies;';
-//$shire['database']['username'] = 'root';
-//$shire['database']['password'] = '';
-//$shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
 
+$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Movies;';
+$shire['database']['username'] = 'root';
+$shire['database']['password'] = '';
+$shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
+/*
 $shire['database']['dsn'] = 'mysql:host=blu-ray.student.bth.se;dbname=pael10;';
 $shire['database']['username'] = 'pael10';
 $shire['database']['password'] = 'G+&0\fO4';
 $shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
-
+*/
 
  
 /**

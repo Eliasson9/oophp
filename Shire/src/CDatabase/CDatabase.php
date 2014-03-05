@@ -84,7 +84,7 @@ class CDatabase {
 	* @return string with links to order by column.
 	*/
 	function orderBy($column) {
-		return "<span class='orderBy'><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'asc'))."'>&darr;</li></a><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'desc'))."'>&uarr;</a></span>";
+		return "<span class='orderBy'><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'asc'))."'>&darr;</a><a href='".$this->getQueryString(array('orderBy' => $column, 'order' => 'desc'))."'>&uarr;</a></span>";
 	}
 	
 	/**
@@ -97,11 +97,11 @@ class CDatabase {
 	function getQueryString($options, $prepend='?') {
   		// parse query string into array
   		$query = array();
+  		var_dump($_SERVER['QUERY_STRING']);
   		parse_str($_SERVER['QUERY_STRING'], $query);
- 
   		// Modify the existing query string with new options
   		$query = array_merge($query, $options);
- 
+ 		var_dump($query);
   		// Return the modified querystring
   		return $prepend . http_build_query($query);
 	}
