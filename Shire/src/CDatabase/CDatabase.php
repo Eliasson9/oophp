@@ -97,13 +97,13 @@ class CDatabase {
 	function getQueryString($options, $prepend='?') {
   		// parse query string into array
   		$query = array();
-  		var_dump($_SERVER['QUERY_STRING']);
-  		parse_str($_SERVER['QUERY_STRING'], $query);
+		parse_str($_SERVER['QUERY_STRING'], $query);
+
   		// Modify the existing query string with new options
   		$query = array_merge($query, $options);
- 		var_dump($query);
-  		// Return the modified querystring
-  		return $prepend . http_build_query($query);
+ 		
+ 		// Return the modified querystring
+  		return $prepend . http_build_query($query, '', '&amp;');
 	}
 	
 	/**
