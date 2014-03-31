@@ -1,0 +1,186 @@
+/* CSS Document */
+
+/**
+ * General elements
+ */
+body {
+  	color: #333;
+  	font-family: arial, sans-serif;
+}
+ 
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+	margin: 0 auto;
+	width: 95vw;
+	padding: 10px;
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+#header {
+	position: relative;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.sitelogo {
+	left: -10vw;
+	position: relative;
+}
+ 
+.sitetitle {
+	position: absolute;
+	top: 38px;
+	left: 45vw;
+	font-size: 38px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+ 
+.siteslogan {
+	position: absolute;
+	top: 87px;
+	font-style: italic;
+	color: #BBBBBB;
+	text-align: center;
+	left: 45vw;
+}
+
+/**
+ * Layout for nav top
+ */ 
+.topNav {
+	text-align: center;
+}
+ 
+.topNav ul ul {
+	display: none;
+}
+
+.topNav ul li:hover > ul {
+	display: block;
+}
+
+.topNav ul {
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+.topNav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+.topNav ul li {
+	border-right: 1px solid #BBBBBB;
+	float: left;
+}
+
+.topNav ul li:hover {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+.topNav ul li:hover a {
+	text-decoration: underline;
+}
+	
+.topNav ul li a {
+	display: block; 
+	padding: 0.5vh 2vw;
+	color: #757575; 
+	text-decoration: none;
+}
+
+.topNav ul ul {
+	border-radius: 0px; padding: 0;
+	border: 1px solid #BBBBBB;
+	position: absolute; 
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+.topNav ul ul li {
+	float: none; 
+	border-right: 0px;
+	position: relative;
+}
+
+.topNav ul ul li a {
+	padding: 0.5vh 2vw;
+}	
+
+.topNav ul ul li a:hover {
+	background: #BBBBBB;
+}
+ 
+/**
+ * Layout for main
+ */
+#main {
+	min-height: 20em;
+}
+
+/**
+*	Layout for content
+*/
+
+#content {
+	width: 60vw;
+	text-align:left;
+	margin:auto;
+}
+
+#above {
+	text-align: right;
+}
+
+#below {
+	text-align: center;
+}
+
+.myCal {
+	display: flex;
+}
+
+.left {
+	float: left;
+	width: 5vw;
+	margin-left: 5vw;
+}
+
+.right {
+	float: right;
+	width: 5vw;
+	margin-right: 5vw;
+}
+
+ 
+/**
+ * Layout for footer
+ */
+#footer {
+  	margin-top: 40px;
+  	border-top: 1px solid #ccc;
+  	padding-top: 15px;
+}
+ 
+.sitefooter {
+  	color: #BBBBBB;
+}
