@@ -14,6 +14,7 @@ $res = $db->ExecuteSelectQueryAndFetchAll($sql);
 var_dump($res);
 
 
+
 // Do it and store it all in variables in the Shire container.
 $shire['title'] = "Visa Innehåll";
 
