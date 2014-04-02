@@ -31,6 +31,7 @@ function getUrlToContent($site) {
 $sql = "SELECT *, (published <= NOW()) AS available FROM Content;";
 $res = $db->ExecuteSelectQueryAndFetchAll($sql);
 
+//Create a bulletpoit list with all sites
 $html = "";
 $html .= "<ul>";
 foreach ($res as $key => $site) {
@@ -40,8 +41,6 @@ foreach ($res as $key => $site) {
 }
 $html .= "</ul>";
 
-
-// Do it and store it all in variables in the Shire container.
 $shire['title'] = "Visa Innehåll";
 
 $shire['main'] = <<<EOD
