@@ -24,7 +24,7 @@ if(isset($_POST['edit'])) {
 	$data = isset($_POST['DATA']) ? $_POST['DATA'] : null;
 	
 	$sql = "UPDATE Content SET slug = ?, url = ?, TYPE = ?, title = ? DATA = ?, FILTER = ?, published = ?, updated = NOW() WHERE id = ?;";
-	$params[] = array($slug, $url, $type, $title,  $data, $filter, published, $id);
+	$params[] = array($slug, $url, $type, $title,  $data, $filter, $published, $id);
 	$db->ExecuteQuery($sql, $params);	
 }
 
@@ -68,7 +68,7 @@ $shire['main'] = <<<EOD
 		</p>
 		<p>
 			<label>Publisering: </label>
-			<input type='text' name='published' value='{$res[0]->available}'/>
+			<input type='datetime' name='published' value='{$res[0]->available}'/>
 		</p>
 		<p>
 			<label>Data: </label>

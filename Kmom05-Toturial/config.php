@@ -45,7 +45,7 @@ $shire = array();
  *
  */
 
-$shire['database']['dsn'] = 'mysql:host=localhost;dbname=Kmom05;';
+$shire['database']['dsn'] = 'mysql:host=localhost;dbname=kmom05;';
 $shire['database']['username'] = 'root';
 $shire['database']['password'] = '';
 $shire['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"); 
