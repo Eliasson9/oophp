@@ -1,0 +1,35 @@
+table {
+	margin: 30px auto auto auto;
+	width: 60vw;
+	border: 1px solid #BBBBBB;
+}
+
+tr {
+	display: table-row;
+}
+
+th {
+	text-align: center;
+}
+
+td, th {
+ 	border: 1px solid #BBBBBB;
+ 	padding: 5px;
+}
+
+.movieImg {
+	display: block;
+	margin: auto;
+	width: 5vw;
+	height: 6vh;
+}
+
+.orderBy {
+	
+}
+
+.orderBy a {
+	text-decoration: none;
+	color: #000000;
+}
+
